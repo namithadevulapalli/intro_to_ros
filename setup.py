@@ -19,7 +19,7 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts' : ['bluerov2_sensors = intro_to_ros.bluerov2_sensors:main']
+        'console_scripts' : ['bluerov2_sensors = intro_to_ros.bluerov2_sensors:main', 'armer = intro_to_ros.armer:main',]
     },
     
 )

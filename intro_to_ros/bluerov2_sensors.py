@@ -71,6 +71,10 @@ class SensorSubscriber(Node):
             5.0, self.check_voltage
         )
 
+        self.imu_data_checker = self.create_timer(
+            5.0, self.print_imu_data
+        )
+
         self.get_logger().info("starting subscriber nodes")
 
     def pressure_diff_callback(self, msg):
